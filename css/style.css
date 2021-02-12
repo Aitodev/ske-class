@@ -3802,6 +3802,99 @@ ul.list_order li span {
 	content: ''
 }
 
+/* more details button */
+.more__details__button{
+    background: none;
+    color: #ccc;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #e04f67;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.more__details__button:focus{
+    outline: none;
+}
+
+.more__details__button:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.more__details__button:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px) ;
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+.more__details__button:hover{
+    background: #e04f67;
+    cursor: pointer;
+}
+
+.more__details__button:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+.dropdown-button{
+    display: none;
+    position: absolute;
+    background-color: #e04f67;
+    max-width: 210px;
+    max-height: 100px;
+    z-index: 1;
+}
+
+.dropdown-button a:hover{
+    color: #fff;
+}   
+
+.dropdown-button a{
+    color: #fff;
+    margin-top: 10px;
+    
+}
+
+.dropdown-button:hover{
+    display: block;
+}
+
+.dropdown-button-more{
+    position: absolute;
+}
+
+.dropdown-button-more:hover .dropdown-button{
+    display: block;
+}
+
+.dropdown-button-more:hover .more__details__button{
+    
+}
+
+
 .banner {
 	position: relative;
 	background: #fff url(http://www.ansonika.com/citytours/img/banner_bg.png) no-repeat center bottom;
