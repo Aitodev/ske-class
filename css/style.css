@@ -1532,16 +1532,16 @@ ul#cat_nav li a span {
     display: flex;
 }
 .card-body p{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .tour_list_desc p{
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .buttons p a{
     margin-right: 10px;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 @media (max-width:575px) {
